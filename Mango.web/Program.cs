@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<ICouponService, CouponService>();
-#pragma warning disable CS8601 // Existence possible d'une assignation de référence null.
+#pragma warning disable CS8601 // Existence possible d'une acssignation de référence null.
 SD.CouponApiBase = builder.Configuration["ServiceUrls:CouponAPI"];
 #pragma warning restore CS8601 // Existence possible d'une assignation de référence null.
 builder.Services.AddScoped<IBaseService, BaseService>();
