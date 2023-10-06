@@ -37,7 +37,7 @@ namespace Mango.web.Service
             {
                 ApiType = SD.ApiType.GET,
                 Url=SD.CouponApiBase+"/api/coupon"
-            }) ;
+            });
         }
 
         public async Task<ResponseDto?> GetCouponAsync(string couponcode)
